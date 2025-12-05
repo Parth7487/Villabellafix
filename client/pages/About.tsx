@@ -195,14 +195,16 @@ export default function About() {
                 </div>
               </div>
             </div>
-            <div className="h-96 sm:h-[600px] md:h-[750px] rounded-lg overflow-hidden">
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Fe39acd0515c343298f9577041fa60f29%2Fbc5a0f02c5e64f4ba7ba111ba39f80ef?format=webp&width=800"
-                alt="Quality craftsmanship"
-                className="w-full h-full object-cover rounded-lg"
-                width="800"
-                height="600"
-              />
+            <div className="py-2">
+              <div className="h-96 sm:h-[600px] md:h-[750px] rounded-lg overflow-hidden">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2Fe39acd0515c343298f9577041fa60f29%2Fbc5a0f02c5e64f4ba7ba111ba39f80ef?format=webp&width=800"
+                  alt="Quality craftsmanship"
+                  className="w-full h-full object-cover rounded-lg"
+                  width="800"
+                  height="600"
+                />
+              </div>
             </div>
           </div>
         </div>
