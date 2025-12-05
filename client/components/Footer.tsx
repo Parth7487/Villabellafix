@@ -263,20 +263,23 @@ const Footer = () => {
               </span>
               <div className="flex gap-4 items-center">
                 {/* VIPPS */}
-                <div className="w-12 h-8 bg-blue-600 rounded flex items-center justify-center text-white font-bold text-xs">
-                  VIPPS
-                </div>
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F4cd739e8b5a04122bfbd47151e3cded1%2F76bccc4d8a1d4e969483764473bfab63?format=webp&width=800"
+                  alt="Vipps payment method"
+                  className="w-12 h-8 object-contain rounded"
+                />
                 {/* VISA */}
-                <div className="w-12 h-8 bg-blue-900 rounded flex items-center justify-center text-white font-bold text-xs">
-                  VISA
-                </div>
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F4cd739e8b5a04122bfbd47151e3cded1%2Fe76ff3c9cbc04ba7bea4ddea48c02702?format=webp&width=800"
+                  alt="Visa payment method"
+                  className="w-12 h-8 object-contain rounded"
+                />
                 {/* Mastercard */}
-                <div className="w-12 h-8 bg-gradient-to-br from-red-600 to-orange-500 rounded flex items-center justify-center shadow-md">
-                  <div className="flex gap-0.5">
-                    <div className="w-2.5 h-2.5 rounded-full bg-red-400 opacity-80"></div>
-                    <div className="w-2.5 h-2.5 rounded-full bg-orange-400 opacity-80"></div>
-                  </div>
-                </div>
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F4cd739e8b5a04122bfbd47151e3cded1%2F9fa2bf4c31664545a325a7747a2bf613?format=webp&width=800"
+                  alt="Mastercard payment method"
+                  className="w-12 h-8 object-contain rounded"
+                />
               </div>
             </div>
 
