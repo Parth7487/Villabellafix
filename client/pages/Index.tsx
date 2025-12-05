@@ -383,7 +383,7 @@ export default function Index() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-6">
             {/* Badge 1 - Cotton */}
             <div className="flex flex-col items-center text-center space-y-4">
-              <div className="w-32 h-32 flex-shrink-0">
+              <div className="w-40 h-40 flex-shrink-0">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2Fd971585a431447f288b6b6fba2521d06%2F7f42e97a91164525b5990f1c7159678d?format=webp&width=800"
                   alt="100% Cotton badge"
@@ -403,7 +403,7 @@ export default function Index() {
 
             {/* Badge 2 - European Production */}
             <div className="flex flex-col items-center text-center space-y-4">
-              <div className="w-32 h-32 flex-shrink-0">
+              <div className="w-40 h-40 flex-shrink-0">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2Fd971585a431447f288b6b6fba2521d06%2Fac2b05c61cb84f349eae3429ae30d34c?format=webp&width=800"
                   alt="Produced in Europe badge"
@@ -423,7 +423,7 @@ export default function Index() {
 
             {/* Badge 3 - Artist Design */}
             <div className="flex flex-col items-center text-center space-y-4">
-              <div className="w-32 h-32 flex-shrink-0">
+              <div className="w-40 h-40 flex-shrink-0">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2Fd971585a431447f288b6b6fba2521d06%2F1cf66f7dd0d64553b7d0311a8f2106e0?format=webp&width=800"
                   alt="Artist-created design badge"
@@ -443,7 +443,7 @@ export default function Index() {
 
             {/* Badge 4 - European Feathers */}
             <div className="flex flex-col items-center text-center space-y-4">
-              <div className="w-32 h-32 flex-shrink-0">
+              <div className="w-40 h-40 flex-shrink-0">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2Fd971585a431447f288b6b6fba2521d06%2F1372431f1ff34f848e72687c12dfe264?format=webp&width=800"
                   alt="European feathers inner pillow badge"
