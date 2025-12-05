@@ -34,10 +34,10 @@ export default function About() {
       </section>
 
       {/* Section 1: The Inspiration */}
-      <section className="py-20 md:py-32 bg-white">
+      <section className="bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-stretch">
+            <div className="flex flex-col justify-center py-12 lg:py-0">
               <p className="text-xs tracking-widest font-light text-stone-600 uppercase mb-6">
                 {t("about.inspirationLabel") || "Inspirasjon"}
               </p>
@@ -74,7 +74,7 @@ export default function About() {
 
       {/* Section 2: Our Designs */}
       <section
-        className="relative py-20 md:py-32 overflow-hidden"
+        className="relative overflow-hidden"
         style={{
           backgroundColor: "#1c1917",
           backgroundImage: `url('https://cdn.builder.io/api/v1/image/assets%2F4cd739e8b5a04122bfbd47151e3cded1%2Fbebb4f4dc1f84085a0898f435b21a2c3?format=webp&width=800')`,
@@ -89,7 +89,7 @@ export default function About() {
 
         {/* Content */}
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-stretch">
             <div className="h-96 sm:h-[600px] md:h-[750px] rounded-lg overflow-hidden order-2 lg:order-1">
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2Fe39acd0515c343298f9577041fa60f29%2F5e67c3514401438ab8d1e2feefdc3fd6?format=webp&width=800"
@@ -99,7 +99,7 @@ export default function About() {
                 height="600"
               />
             </div>
-            <div className="order-1 lg:order-2">
+            <div className="order-1 lg:order-2 flex flex-col justify-center py-12 lg:py-0">
               <p className="text-xs tracking-widest font-light text-stone-400 uppercase mb-6">
                 {t("about.designLabel") || "Håndverk"}
               </p>
@@ -126,10 +126,10 @@ export default function About() {
       </section>
 
       {/* Section 3: Created with Intention */}
-      <section className="py-20 md:py-32 bg-white">
+      <section className="bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-stretch">
+            <div className="flex flex-col justify-center py-12 lg:py-0">
               <p className="text-xs tracking-widest font-light text-stone-600 uppercase mb-6">
                 {t("about.qualityLabel") || "Kvalitet"}
               </p>
@@ -205,10 +205,10 @@ export default function About() {
       </section>
 
       {/* Section 4: Meet the Founders */}
-      <section className="py-20 md:py-32 bg-stone-900">
+      <section className="bg-stone-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-stretch">
+            <div className="flex items-stretch">
               <div className="h-96 sm:h-[600px] md:h-[750px] rounded-lg overflow-hidden">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2Fe39acd0515c343298f9577041fa60f29%2F02bee4e14e5f402294ea66f7cefe585e?format=webp&width=800"
@@ -219,7 +219,7 @@ export default function About() {
                 />
               </div>
             </div>
-            <div>
+            <div className="flex flex-col justify-center py-12 lg:py-0">
               <p className="text-xs tracking-widest font-light text-stone-400 uppercase mb-6">
                 {t("about.foundersLabel") || "Vårt team"}
               </p>
