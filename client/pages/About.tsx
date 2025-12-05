@@ -7,18 +7,19 @@ export default function About() {
   return (
     <div className="bg-white">
       {/* Page Header / Hero Section */}
-      <section className="relative w-full py-20 md:py-32 bg-stone-900 border-b border-stone-800 overflow-hidden">
-        {/* Background image */}
-        <div className="absolute inset-0">
-          <img
-            src="https://images.pexels.com/photos/11898897/pexels-photo-11898897.jpeg"
-            alt="Mediterranean coastline"
-            className="w-full h-full object-cover"
-          />
-        </div>
-
+      <section
+        className="relative w-full py-20 md:py-32 border-b border-stone-800 overflow-hidden"
+        style={{
+          backgroundColor: "#1c1917",
+          backgroundImage: `url('https://cdn.builder.io/api/v1/image/assets%2F4cd739e8b5a04122bfbd47151e3cded1%2Fbebb4f4dc1f84085a0898f435b21a2c3?format=webp&width=800')`,
+          backgroundSize: "auto",
+          backgroundPosition: "0 0",
+          backgroundRepeat: "repeat",
+          backgroundAttachment: "scroll",
+        }}
+      >
         {/* Overlay gradient for readability */}
-        <div className="absolute inset-0 bg-gradient-to-br from-stone-950/60 via-stone-900/70 to-stone-950/80"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-stone-900/90 to-stone-950/90 pointer-events-none"></div>
 
         {/* Content */}
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
