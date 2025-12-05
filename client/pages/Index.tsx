@@ -580,16 +580,17 @@ export default function Index() {
           <p className="text-lg text-stone-300 font-light mb-10 max-w-2xl mx-auto">
             {t("cta.description")}
           </p>
-          <div className="flex flex-col sm:flex-row gap-6 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/products"
-              className="px-6 sm:px-10 py-4 bg-stone-800 hover:bg-stone-900 text-white font-light uppercase tracking-wider text-sm transition duration-300 inline-block text-center"
+              className="px-8 sm:px-12 py-3.5 bg-amber-600 hover:bg-amber-700 text-white font-medium uppercase tracking-widest text-xs transition duration-300 ease-out inline-block text-center shadow-lg hover:shadow-amber-600/40 relative group"
             >
-              {t("cta.shop")}
+              <span className="relative z-10">{t("cta.shop")}</span>
+              <div className="absolute inset-0 bg-gradient-to-r from-amber-700 to-amber-600 opacity-0 group-hover:opacity-100 transition duration-300"></div>
             </Link>
             <Link
               to="/about"
-              className="px-6 sm:px-10 py-4 border border-stone-700 hover:border-stone-400 text-white font-light uppercase tracking-wider text-sm transition duration-300 inline-block text-center"
+              className="px-8 sm:px-12 py-3.5 border-2 border-white hover:border-amber-400 text-white hover:text-amber-300 font-medium uppercase tracking-widest text-xs transition duration-300 inline-block text-center hover:bg-white/5 backdrop-blur-sm"
             >
               {t("cta.learn")}
             </Link>

@@ -322,10 +322,10 @@ const translations: Record<Language, Record<string, string>> = {
     "artist.quote":
       "This collection grew from my lifelong love of mosaic storytelling and the warm, symbolic world of Mediterranean art. As an artist shaped by both traditional iconography and imaginative painting, I am inspired by symbols that reveal themselves slowly. In these pieces, I wanted to capture timelessness, where myth, nature, and memory blend into a calm, luminous atmosphere.",
     "artist.cta": "Read the Story",
-    "cta.heading": "Ready to Transform Your Space?",
+    "cta.heading": "Transform Your Home",
     "cta.subheading": "Discover Your Mediterranean Dream",
     "cta.description":
-      "Explore our complete collection of handcrafted cushion covers, each telling a story of Mediterranean artistry and Nordic craftsmanship.",
+      "Immerse yourself in the timeless beauty of our handcrafted collection. Each piece blends ancient Mediterranean artistry with contemporary Nordic design, bringing warmth, character, and storytelling to your living space.",
     "cta.shop": "Shop Now",
     "cta.learn": "Learn More",
     "hero.cta": "Explore Riviera",
