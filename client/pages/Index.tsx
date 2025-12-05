@@ -561,12 +561,12 @@ export default function Index() {
       <section
         className="py-12 md:py-16 relative overflow-hidden"
         style={{
-          backgroundColor: '#1c1917',
+          backgroundColor: "#1c1917",
           backgroundImage: `url('https://cdn.builder.io/api/v1/image/assets%2F4cd739e8b5a04122bfbd47151e3cded1%2Fbebb4f4dc1f84085a0898f435b21a2c3?format=webp&width=800')`,
-          backgroundSize: 'auto',
-          backgroundPosition: '0 0',
-          backgroundRepeat: 'repeat',
-          backgroundAttachment: 'scroll',
+          backgroundSize: "auto",
+          backgroundPosition: "0 0",
+          backgroundRepeat: "repeat",
+          backgroundAttachment: "scroll",
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-br from-stone-900/90 to-stone-950/90 pointer-events-none"></div>
