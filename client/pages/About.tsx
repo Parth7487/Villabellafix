@@ -214,7 +214,7 @@ export default function About() {
       <section className="bg-stone-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-stretch">
-            <div className="flex items-stretch">
+            <div className="flex items-stretch py-2">
               <div className="h-96 sm:h-[600px] md:h-[750px] rounded-lg overflow-hidden">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2Fe39acd0515c343298f9577041fa60f29%2F02bee4e14e5f402294ea66f7cefe585e?format=webp&width=800"
