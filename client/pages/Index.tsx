@@ -561,14 +561,12 @@ export default function Index() {
       <section
         className="py-20 md:py-32 bg-gradient-to-br from-stone-900 to-stone-950 relative overflow-hidden"
         style={{
-          backgroundImage: `
-            repeating-linear-gradient(0deg, transparent, transparent 200px, rgba(255,255,255,0.03) 200px, rgba(255,255,255,0.03) 400px),
-            url('https://cdn.builder.io/api/v1/image/assets%2F4cd739e8b5a04122bfbd47151e3cded1%2Fbebb4f4dc1f84085a0898f435b21a2c3?format=webp&width=800')
-          `,
-          backgroundSize: 'auto, 300px 120px',
-          backgroundPosition: '0 0, 0 0',
-          backgroundRepeat: 'repeat, repeat',
+          backgroundImage: `url('https://cdn.builder.io/api/v1/image/assets%2F4cd739e8b5a04122bfbd47151e3cded1%2Fbebb4f4dc1f84085a0898f435b21a2c3?format=webp&width=800')`,
+          backgroundSize: 'auto 80px',
+          backgroundPosition: '0 0',
+          backgroundRepeat: 'repeat-x',
           backgroundAttachment: 'scroll',
+          backgroundBlendMode: 'overlay',
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-br from-stone-900/90 to-stone-950/90 pointer-events-none"></div>
