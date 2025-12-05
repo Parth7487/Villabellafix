@@ -73,8 +73,22 @@ export default function About() {
       </section>
 
       {/* Section 2: Our Designs */}
-      <section className="py-20 md:py-32 bg-stone-50 border-y border-stone-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section
+        className="relative py-20 md:py-32 overflow-hidden"
+        style={{
+          backgroundColor: "#1c1917",
+          backgroundImage: `url('https://cdn.builder.io/api/v1/image/assets%2F4cd739e8b5a04122bfbd47151e3cded1%2Fbebb4f4dc1f84085a0898f435b21a2c3?format=webp&width=800')`,
+          backgroundSize: "auto",
+          backgroundPosition: "0 0",
+          backgroundRepeat: "repeat",
+          backgroundAttachment: "scroll",
+        }}
+      >
+        {/* Overlay gradient for readability */}
+        <div className="absolute inset-0 bg-gradient-to-br from-stone-900/90 to-stone-950/90 pointer-events-none"></div>
+
+        {/* Content */}
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="h-96 sm:h-[600px] md:h-[750px] rounded-lg overflow-hidden order-2 lg:order-1">
               <img
@@ -86,13 +100,13 @@ export default function About() {
               />
             </div>
             <div className="order-1 lg:order-2">
-              <p className="text-xs tracking-widest font-light text-stone-600 uppercase mb-6">
+              <p className="text-xs tracking-widest font-light text-stone-400 uppercase mb-6">
                 {t("about.designLabel") || "Håndverk"}
               </p>
-              <h2 className="text-5xl font-light tracking-tight text-stone-900 mb-8">
+              <h2 className="text-5xl font-light tracking-tight text-white mb-8">
                 {t("about.designHeading") || "Våre design"}
               </h2>
-              <div className="space-y-6 text-stone-600 font-light leading-relaxed">
+              <div className="space-y-6 text-stone-300 font-light leading-relaxed">
                 <p>
                   {t("about.designP1") ||
                     "Vi visste at vi ikke kunne bringe våre produkter til liv uten en kunstnerisk hånd som kunne fange essensen av våre visjoner."}
