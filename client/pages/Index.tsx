@@ -559,11 +559,11 @@ export default function Index() {
 
       {/* Call to Action Section */}
       <section
-        className="py-20 md:py-32 relative overflow-hidden"
+        className="py-12 md:py-16 relative overflow-hidden"
         style={{
           backgroundColor: '#1c1917',
           backgroundImage: `url('https://cdn.builder.io/api/v1/image/assets%2F4cd739e8b5a04122bfbd47151e3cded1%2Fbebb4f4dc1f84085a0898f435b21a2c3?format=webp&width=800')`,
-          backgroundSize: '100% auto',
+          backgroundSize: 'auto',
           backgroundPosition: '0 0',
           backgroundRepeat: 'repeat',
           backgroundAttachment: 'scroll',
