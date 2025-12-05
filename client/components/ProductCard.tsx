@@ -21,38 +21,26 @@ export default function ProductCard({
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
 
   useEffect(() => {
-    if (isHovering && images.length > 1) {
-      intervalRef.current = setInterval(() => {
-        setCurrentImageIndex((prev) => (prev + 1) % images.length);
-      }, 2000);
-    } else {
-      if (intervalRef.current) {
-        clearInterval(intervalRef.current);
-        intervalRef.current = null;
-      }
+    if (!isHovering || images.length <= 1) {
+      if (intervalRef.current) clearInterval(intervalRef.current);
       setCurrentImageIndex(0);
+      return;
     }
 
+    intervalRef.current = setInterval(() => {
+      setCurrentImageIndex((prev) => (prev + 1) % images.length);
+    }, 2000);
+
     return () => {
-      if (intervalRef.current) {
-        clearInterval(intervalRef.current);
-      }
+      if (intervalRef.current) clearInterval(intervalRef.current);
     };
   }, [isHovering, images.length]);
-
-  const handleMouseEnter = () => {
-    setIsHovering(true);
-  };
-
-  const handleMouseLeave = () => {
-    setIsHovering(false);
-  };
 
   return (
     <div
       className="group cursor-pointer transition"
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
+      onMouseEnter={() => setIsHovering(true)}
+      onMouseLeave={() => setIsHovering(false)}
     >
       <div
         className={`relative h-64 sm:h-80 md:h-96 ${bgGradient} rounded-lg overflow-hidden mb-6 shadow-sm hover:shadow-2xl transition duration-300`}
