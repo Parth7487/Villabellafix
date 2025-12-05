@@ -7,8 +7,21 @@ export default function About() {
   return (
     <div className="bg-white">
       {/* Page Header / Hero Section */}
-      <section className="py-20 md:py-32 bg-stone-900 border-b border-stone-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section className="relative w-full py-20 md:py-32 bg-stone-900 border-b border-stone-800 overflow-hidden">
+        {/* Background image */}
+        <div className="absolute inset-0">
+          <img
+            src="https://images.pexels.com/photos/11898897/pexels-photo-11898897.jpeg"
+            alt="Mediterranean coastline"
+            className="w-full h-full object-cover"
+          />
+        </div>
+
+        {/* Overlay gradient for readability */}
+        <div className="absolute inset-0 bg-gradient-to-br from-stone-950/60 via-stone-900/70 to-stone-950/80"></div>
+
+        {/* Content */}
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-6xl md:text-7xl font-light tracking-tight text-white mb-6 leading-tight">
             {t("about.headerTitle") || "Et ønske om å bringe syden hjem"}
           </h1>
