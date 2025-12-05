@@ -13,9 +13,7 @@ export default function LanguageCurrencyBar({
   onLanguageChange,
   onCurrencyChange,
 }: LanguageCurrencyBarProps) {
-  const activeClass = isScrolled
-    ? "text-stone-900"
-    : "text-white";
+  const activeClass = isScrolled ? "text-stone-900" : "text-white";
   const inactiveClass = isScrolled
     ? "text-stone-400 hover:text-stone-700"
     : "text-white/40 hover:text-white/70";
@@ -35,7 +33,9 @@ export default function LanguageCurrencyBar({
         >
           NO
         </button>
-        <span className={`transition-all duration-300 text-xs ${separatorClass}`}>
+        <span
+          className={`transition-all duration-300 text-xs ${separatorClass}`}
+        >
           /
         </span>
         <button
@@ -48,7 +48,9 @@ export default function LanguageCurrencyBar({
         </button>
       </div>
 
-      <div className={`transition-all duration-300 ${borderClass} border-l pl-4 sm:pl-6 ml-4 sm:ml-6`}>
+      <div
+        className={`transition-all duration-300 ${borderClass} border-l pl-4 sm:pl-6 ml-4 sm:ml-6`}
+      >
         <select
           value={currency}
           onChange={(e) => onCurrencyChange(e.target.value)}

@@ -3,10 +3,30 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import TrustBadge from "@/components/ui/TrustBadge";
 
 const TRUST_ITEMS = [
-  { id: "leaf", icon: Leaf, labelKey: "trust.madeInEurope", descKey: "trust.madeInEuropeDesc" },
-  { id: "truck", icon: Truck, labelKey: "trust.delivery", descKey: "trust.deliveryDesc" },
-  { id: "rotate", icon: RotateCcw, labelKey: "trust.returns", descKey: "trust.returnsDesc" },
-  { id: "check", icon: CheckCircle, labelKey: "trust.norwegianShop", descKey: "trust.norwegianShopDesc" },
+  {
+    id: "leaf",
+    icon: Leaf,
+    labelKey: "trust.madeInEurope",
+    descKey: "trust.madeInEuropeDesc",
+  },
+  {
+    id: "truck",
+    icon: Truck,
+    labelKey: "trust.delivery",
+    descKey: "trust.deliveryDesc",
+  },
+  {
+    id: "rotate",
+    icon: RotateCcw,
+    labelKey: "trust.returns",
+    descKey: "trust.returnsDesc",
+  },
+  {
+    id: "check",
+    icon: CheckCircle,
+    labelKey: "trust.norwegianShop",
+    descKey: "trust.norwegianShopDesc",
+  },
 ];
 
 export default function TrustSection() {

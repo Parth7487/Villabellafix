@@ -38,7 +38,9 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <div className="flex flex-col min-h-screen">
       <Header showAlways={!isHomepage} />
-      <main className={`flex-grow ${!isHomepage ? "pt-24 sm:pt-32 lg:pt-48" : ""}`}>
+      <main
+        className={`flex-grow ${!isHomepage ? "pt-24 sm:pt-32 lg:pt-48" : ""}`}
+      >
         {children}
       </main>
       <Footer />
@@ -48,12 +50,54 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
 
 const AppRoutes = () => (
   <Routes>
-    <Route path="/" element={<Layout><Index /></Layout>} />
-    <Route path="/products" element={<Layout><Products /></Layout>} />
-    <Route path="/product/:id" element={<Layout><ProductDetail /></Layout>} />
-    <Route path="/about" element={<Layout><About /></Layout>} />
-    <Route path="/contact" element={<Layout><Contact /></Layout>} />
-    <Route path="*" element={<Layout><NotFound /></Layout>} />
+    <Route
+      path="/"
+      element={
+        <Layout>
+          <Index />
+        </Layout>
+      }
+    />
+    <Route
+      path="/products"
+      element={
+        <Layout>
+          <Products />
+        </Layout>
+      }
+    />
+    <Route
+      path="/product/:id"
+      element={
+        <Layout>
+          <ProductDetail />
+        </Layout>
+      }
+    />
+    <Route
+      path="/about"
+      element={
+        <Layout>
+          <About />
+        </Layout>
+      }
+    />
+    <Route
+      path="/contact"
+      element={
+        <Layout>
+          <Contact />
+        </Layout>
+      }
+    />
+    <Route
+      path="*"
+      element={
+        <Layout>
+          <NotFound />
+        </Layout>
+      }
+    />
   </Routes>
 );
 

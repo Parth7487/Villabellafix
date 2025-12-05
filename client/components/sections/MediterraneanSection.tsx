@@ -11,7 +11,7 @@ export default function MediterraneanSection() {
   const handleNewsletterSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!gdprAccepted) return;
-    
+
     setSubscriptionLoading(true);
     try {
       await new Promise((resolve) => setTimeout(resolve, 500));

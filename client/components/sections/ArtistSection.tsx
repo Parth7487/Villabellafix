@@ -40,13 +40,12 @@ export default function ArtistSection() {
             </p>
 
             <blockquote className="border-l-4 border-stone-700 pl-6 py-6 italic text-stone-300 font-light text-lg">
-              "This collection grew from my lifelong love of mosaic
-              storytelling and the warm, symbolic world of Mediterranean art.
-              As an artist shaped by both traditional iconography and
-              imaginative painting, I am inspired by symbols that reveal
-              themselves slowly. In these pieces, I wanted to capture
-              timelessness, where myth, nature, and memory blend into a calm,
-              luminous atmosphere."
+              "This collection grew from my lifelong love of mosaic storytelling
+              and the warm, symbolic world of Mediterranean art. As an artist
+              shaped by both traditional iconography and imaginative painting, I
+              am inspired by symbols that reveal themselves slowly. In these
+              pieces, I wanted to capture timelessness, where myth, nature, and
+              memory blend into a calm, luminous atmosphere."
             </blockquote>
 
             <p className="text-sm text-stone-400 font-light">

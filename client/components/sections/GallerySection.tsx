@@ -38,7 +38,10 @@ export default function GallerySection() {
           <SectionHeader
             label={t("gallery.label") || "Lifestyle"}
             heading={t("gallery.title") || "Experience the Mediterranean"}
-            description={t("gallery.description") || "Each pillow tells a story of Mediterranean heritage, crafted for those who bring the warmth of the South into their Scandinavian homes. Discover how VillaBella transforms everyday moments into Mediterranean memories."}
+            description={
+              t("gallery.description") ||
+              "Each pillow tells a story of Mediterranean heritage, crafted for those who bring the warmth of the South into their Scandinavian homes. Discover how VillaBella transforms everyday moments into Mediterranean memories."
+            }
           />
         </div>
 

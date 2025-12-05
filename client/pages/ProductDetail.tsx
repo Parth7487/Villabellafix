@@ -15,7 +15,9 @@ export default function ProductDetail() {
   const navigate = useNavigate();
   const { formatPrice } = useCurrency();
   const { t } = useLanguage();
-  const [selectedOption, setSelectedOption] = useState<"cover" | "bundle">("cover");
+  const [selectedOption, setSelectedOption] = useState<"cover" | "bundle">(
+    "cover",
+  );
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isSaved, setIsSaved] = useState(false);
 

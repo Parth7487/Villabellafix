@@ -35,7 +35,10 @@ export default function TrustBadgesCircle() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-6">
           {BADGES.map((badge) => (
-            <div key={badge.id} className="flex flex-col items-center text-center space-y-4">
+            <div
+              key={badge.id}
+              className="flex flex-col items-center text-center space-y-4"
+            >
               <div className="w-32 h-32 flex-shrink-0">
                 <img
                   src={badge.src}
