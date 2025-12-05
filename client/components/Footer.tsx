@@ -266,7 +266,7 @@ const Footer = () => {
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F4cd739e8b5a04122bfbd47151e3cded1%2F76bccc4d8a1d4e969483764473bfab63?format=webp&width=800"
                   alt="Vipps payment method"
-                  className="h-8 object-contain"
+                  className="w-12 h-8 object-contain rounded"
                 />
                 {/* VISA */}
                 <div className="w-12 h-8 bg-blue-900 rounded flex items-center justify-center text-white font-bold text-xs">
