@@ -583,14 +583,14 @@ export default function Index() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/products"
-              className="px-8 sm:px-12 py-3.5 bg-amber-600 hover:bg-amber-700 text-white font-medium uppercase tracking-widest text-xs transition duration-300 ease-out inline-block text-center shadow-lg hover:shadow-amber-600/40 relative group"
+              className="px-8 sm:px-12 py-3.5 bg-stone-700 hover:bg-stone-800 text-white font-medium uppercase tracking-widest text-xs transition duration-300 ease-out inline-block text-center shadow-lg hover:shadow-stone-900/40 relative group"
             >
               <span className="relative z-10">{t("cta.shop")}</span>
-              <div className="absolute inset-0 bg-gradient-to-r from-amber-700 to-amber-600 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-stone-800 to-stone-700 opacity-0 group-hover:opacity-100 transition duration-300"></div>
             </Link>
             <Link
               to="/about"
-              className="px-8 sm:px-12 py-3.5 border-2 border-white hover:border-amber-400 text-white hover:text-amber-300 font-medium uppercase tracking-widest text-xs transition duration-300 inline-block text-center hover:bg-white/5 backdrop-blur-sm"
+              className="px-8 sm:px-12 py-3.5 border-2 border-white hover:border-stone-300 text-white hover:text-stone-200 font-medium uppercase tracking-widest text-xs transition duration-300 inline-block text-center hover:bg-white/5 backdrop-blur-sm"
             >
               {t("cta.learn")}
             </Link>
