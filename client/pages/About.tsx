@@ -92,14 +92,16 @@ export default function About() {
         {/* Content */}
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-stretch">
-            <div className="h-96 sm:h-[600px] md:h-[750px] rounded-lg overflow-hidden order-2 lg:order-1">
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Fe39acd0515c343298f9577041fa60f29%2F5e67c3514401438ab8d1e2feefdc3fd6?format=webp&width=800"
-                alt="Our designs"
-                className="w-full h-full object-cover rounded-lg"
-                width="800"
-                height="600"
-              />
+            <div className="py-2 order-2 lg:order-1">
+              <div className="h-96 sm:h-[600px] md:h-[750px] rounded-lg overflow-hidden">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2Fe39acd0515c343298f9577041fa60f29%2F5e67c3514401438ab8d1e2feefdc3fd6?format=webp&width=800"
+                  alt="Our designs"
+                  className="w-full h-full object-cover rounded-lg"
+                  width="800"
+                  height="600"
+                />
+              </div>
             </div>
             <div className="order-1 lg:order-2 flex flex-col justify-center py-12 lg:py-0">
               <p className="text-xs tracking-widest font-light text-stone-400 uppercase mb-6">
