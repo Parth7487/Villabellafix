@@ -7,8 +7,22 @@ export default function About() {
   return (
     <div className="bg-white">
       {/* Page Header / Hero Section */}
-      <section className="py-20 md:py-32 bg-stone-900 border-b border-stone-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section
+        className="relative w-full py-20 md:py-32 border-b border-stone-800 overflow-hidden"
+        style={{
+          backgroundColor: "#1c1917",
+          backgroundImage: `url('https://cdn.builder.io/api/v1/image/assets%2F4cd739e8b5a04122bfbd47151e3cded1%2Fbebb4f4dc1f84085a0898f435b21a2c3?format=webp&width=800')`,
+          backgroundSize: "auto",
+          backgroundPosition: "0 0",
+          backgroundRepeat: "repeat",
+          backgroundAttachment: "scroll",
+        }}
+      >
+        {/* Overlay gradient for readability */}
+        <div className="absolute inset-0 bg-gradient-to-br from-stone-900/90 to-stone-950/90 pointer-events-none"></div>
+
+        {/* Content */}
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-6xl md:text-7xl font-light tracking-tight text-white mb-6 leading-tight">
             {t("about.headerTitle") || "Et ønske om å bringe syden hjem"}
           </h1>
@@ -20,10 +34,10 @@ export default function About() {
       </section>
 
       {/* Section 1: The Inspiration */}
-      <section className="py-20 md:py-32 bg-white">
+      <section className="bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-stretch">
+            <div className="flex flex-col justify-center py-12 lg:py-0">
               <p className="text-xs tracking-widest font-light text-stone-600 uppercase mb-6">
                 {t("about.inspirationLabel") || "Inspirasjon"}
               </p>
@@ -45,40 +59,58 @@ export default function About() {
                 </p>
               </div>
             </div>
-            <div className="h-96 sm:h-[600px] md:h-[750px] rounded-lg overflow-hidden">
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Fe39acd0515c343298f9577041fa60f29%2Fccad9fee65c147f9af5ac91d4f47801b?format=webp&width=800"
-                alt="Mediterranean inspiration"
-                className="w-full h-full object-cover rounded-lg"
-                width="800"
-                height="600"
-              />
+            <div className="py-2">
+              <div className="h-96 sm:h-[600px] md:h-[750px] rounded-lg overflow-hidden">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2Fe39acd0515c343298f9577041fa60f29%2Fccad9fee65c147f9af5ac91d4f47801b?format=webp&width=800"
+                  alt="Mediterranean inspiration"
+                  className="w-full h-full object-cover rounded-lg"
+                  width="800"
+                  height="600"
+                />
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Section 2: Our Designs */}
-      <section className="py-20 md:py-32 bg-stone-50 border-y border-stone-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div className="h-96 sm:h-[600px] md:h-[750px] rounded-lg overflow-hidden order-2 lg:order-1">
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Fe39acd0515c343298f9577041fa60f29%2F5e67c3514401438ab8d1e2feefdc3fd6?format=webp&width=800"
-                alt="Our designs"
-                className="w-full h-full object-cover rounded-lg"
-                width="800"
-                height="600"
-              />
+      <section
+        className="relative overflow-hidden"
+        style={{
+          backgroundColor: "#1c1917",
+          backgroundImage: `url('https://cdn.builder.io/api/v1/image/assets%2F4cd739e8b5a04122bfbd47151e3cded1%2Fbebb4f4dc1f84085a0898f435b21a2c3?format=webp&width=800')`,
+          backgroundSize: "auto",
+          backgroundPosition: "0 0",
+          backgroundRepeat: "repeat",
+          backgroundAttachment: "scroll",
+        }}
+      >
+        {/* Overlay gradient for readability */}
+        <div className="absolute inset-0 bg-gradient-to-br from-stone-900/90 to-stone-950/90 pointer-events-none"></div>
+
+        {/* Content */}
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-stretch">
+            <div className="py-2 order-2 lg:order-1">
+              <div className="h-96 sm:h-[600px] md:h-[750px] rounded-lg overflow-hidden">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2Fe39acd0515c343298f9577041fa60f29%2F5e67c3514401438ab8d1e2feefdc3fd6?format=webp&width=800"
+                  alt="Our designs"
+                  className="w-full h-full object-cover rounded-lg"
+                  width="800"
+                  height="600"
+                />
+              </div>
             </div>
-            <div className="order-1 lg:order-2">
-              <p className="text-xs tracking-widest font-light text-stone-600 uppercase mb-6">
+            <div className="order-1 lg:order-2 flex flex-col justify-center py-12 lg:py-0">
+              <p className="text-xs tracking-widest font-light text-stone-400 uppercase mb-6">
                 {t("about.designLabel") || "Håndverk"}
               </p>
-              <h2 className="text-5xl font-light tracking-tight text-stone-900 mb-8">
+              <h2 className="text-5xl font-light tracking-tight text-white mb-8">
                 {t("about.designHeading") || "Våre design"}
               </h2>
-              <div className="space-y-6 text-stone-600 font-light leading-relaxed">
+              <div className="space-y-6 text-stone-300 font-light leading-relaxed">
                 <p>
                   {t("about.designP1") ||
                     "Vi visste at vi ikke kunne bringe våre produkter til liv uten en kunstnerisk hånd som kunne fange essensen av våre visjoner."}
@@ -98,10 +130,10 @@ export default function About() {
       </section>
 
       {/* Section 3: Created with Intention */}
-      <section className="py-20 md:py-32 bg-white">
+      <section className="bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-stretch">
+            <div className="flex flex-col justify-center py-12 lg:py-0">
               <p className="text-xs tracking-widest font-light text-stone-600 uppercase mb-6">
                 {t("about.qualityLabel") || "Kvalitet"}
               </p>
@@ -163,24 +195,26 @@ export default function About() {
                 </div>
               </div>
             </div>
-            <div className="h-96 sm:h-[600px] md:h-[750px] rounded-lg overflow-hidden">
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Fe39acd0515c343298f9577041fa60f29%2Fbc5a0f02c5e64f4ba7ba111ba39f80ef?format=webp&width=800"
-                alt="Quality craftsmanship"
-                className="w-full h-full object-cover rounded-lg"
-                width="800"
-                height="600"
-              />
+            <div className="py-2">
+              <div className="h-96 sm:h-[600px] md:h-[750px] rounded-lg overflow-hidden">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2Fe39acd0515c343298f9577041fa60f29%2Fbc5a0f02c5e64f4ba7ba111ba39f80ef?format=webp&width=800"
+                  alt="Quality craftsmanship"
+                  className="w-full h-full object-cover rounded-lg"
+                  width="800"
+                  height="600"
+                />
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Section 4: Meet the Founders */}
-      <section className="py-20 md:py-32 bg-stone-900">
+      <section className="bg-stone-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-stretch">
+            <div className="flex items-stretch py-2">
               <div className="h-96 sm:h-[600px] md:h-[750px] rounded-lg overflow-hidden">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2Fe39acd0515c343298f9577041fa60f29%2F02bee4e14e5f402294ea66f7cefe585e?format=webp&width=800"
@@ -191,7 +225,7 @@ export default function About() {
                 />
               </div>
             </div>
-            <div>
+            <div className="flex flex-col justify-center py-12 lg:py-0">
               <p className="text-xs tracking-widest font-light text-stone-400 uppercase mb-6">
                 {t("about.foundersLabel") || "Vårt team"}
               </p>
