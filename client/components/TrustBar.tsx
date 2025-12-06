@@ -19,9 +19,7 @@ export default function TrustBar() {
             </div>
           </div>
           <div>
-            <p className="text-sm font-light text-stone-900">
-              Eco-Friendly
-            </p>
+            <p className="text-sm font-light text-stone-900">Eco-Friendly</p>
             <p className="text-xs text-stone-500 font-light mt-1">
               Sustainable materials
             </p>
@@ -36,9 +34,7 @@ export default function TrustBar() {
             </div>
           </div>
           <div>
-            <p className="text-sm font-light text-stone-900">
-              Free Shipping
-            </p>
+            <p className="text-sm font-light text-stone-900">Free Shipping</p>
             <p className="text-xs text-stone-500 font-light mt-1">
               On orders over $50
             </p>
@@ -53,9 +49,7 @@ export default function TrustBar() {
             </div>
           </div>
           <div>
-            <p className="text-sm font-light text-stone-900">
-              Easy Returns
-            </p>
+            <p className="text-sm font-light text-stone-900">Easy Returns</p>
             <p className="text-xs text-stone-500 font-light mt-1">
               30-day return policy
             </p>
