@@ -176,7 +176,8 @@ const translations: Record<Language, Record<string, string>> = {
     "trust.europeanFeaturesDesc": "Premium innerpute for maksimal komfort",
     "gallery.label": "Livsstil",
     "gallery.title": "Opplev Middelhavet",
-    "gallery.description": "Hver pute forteller en historie om middelhavsarv, skapt for de som bringer varmen fra sør inn i sine skandinaviske hjem. Oppdag hvordan VillaBella forvandles hverdaglige øyeblikk til middelhavsminne.",
+    "gallery.description":
+      "Hver pute forteller en historie om middelhavsarv, skapt for de som bringer varmen fra sør inn i sine skandinaviske hjem. Oppdag hvordan VillaBella forvandles hverdaglige øyeblikk til middelhavsminne.",
     "products.whyChoose": "Hvorfor Velge VillaBella",
     "products.whyChooseDesc":
       "Vi garanterer kvalitet, rask levering og din fullstendige tilfredshet",
@@ -434,14 +435,16 @@ const translations: Record<Language, Record<string, string>> = {
     "trust.cotton": "100% Cotton",
     "trust.cottonDesc": "Premium quality and 100% natural material",
     "trust.europeanProduction": "Produced in Europe",
-    "trust.europeanProductionDesc": "Created with care and craftsmanship traditions",
+    "trust.europeanProductionDesc":
+      "Created with care and craftsmanship traditions",
     "trust.artistDesign": "Artist-Created Design",
     "trust.artistDesignDesc": "Original designs from skilled mosaic artist",
     "trust.europeanFeathers": "European Feathers",
     "trust.europeanFeaturesDesc": "Premium inner pillow for maximum comfort",
     "gallery.label": "Lifestyle",
     "gallery.title": "Experience the Mediterranean",
-    "gallery.description": "Each pillow tells a story of Mediterranean heritage, crafted for those who bring the warmth of the South into their Scandinavian homes. Discover how VillaBella transforms everyday moments into Mediterranean memories.",
+    "gallery.description":
+      "Each pillow tells a story of Mediterranean heritage, crafted for those who bring the warmth of the South into their Scandinavian homes. Discover how VillaBella transforms everyday moments into Mediterranean memories.",
     "products.whyChoose": "Why Choose VillaBella",
     "products.whyChooseDesc":
       "We guarantee quality, fast delivery and your complete satisfaction",
