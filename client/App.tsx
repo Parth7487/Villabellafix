@@ -49,67 +49,71 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
   );
 };
 
+const AppRoutes = () => (
+  <Routes>
+    <Route
+      path="/"
+      element={
+        <Layout>
+          <Index />
+        </Layout>
+      }
+    />
+    <Route
+      path="/products"
+      element={
+        <Layout>
+          <Products />
+        </Layout>
+      }
+    />
+    <Route
+      path="/product/:id"
+      element={
+        <Layout>
+          <ProductDetail />
+        </Layout>
+      }
+    />
+    <Route
+      path="/about"
+      element={
+        <Layout>
+          <About />
+        </Layout>
+      }
+    />
+    <Route
+      path="/contact"
+      element={
+        <Layout>
+          <Contact />
+        </Layout>
+      }
+    />
+    {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+    <Route
+      path="*"
+      element={
+        <Layout>
+          <NotFound />
+        </Layout>
+      }
+    />
+  </Routes>
+);
+
 const App = () => (
   <LanguageProvider>
     <CurrencyProvider>
       <QueryClientProvider client={queryClient}>
         <TooltipProvider>
-          <Preloader />
-          <Toaster />
-          <Sonner />
           <BrowserRouter>
+            <Preloader />
+            <Toaster />
+            <Sonner />
             <ScrollToTop />
-            <Routes>
-              <Route
-                path="/"
-                element={
-                  <Layout>
-                    <Index />
-                  </Layout>
-                }
-              />
-              <Route
-                path="/products"
-                element={
-                  <Layout>
-                    <Products />
-                  </Layout>
-                }
-              />
-              <Route
-                path="/product/:id"
-                element={
-                  <Layout>
-                    <ProductDetail />
-                  </Layout>
-                }
-              />
-              <Route
-                path="/about"
-                element={
-                  <Layout>
-                    <About />
-                  </Layout>
-                }
-              />
-              <Route
-                path="/contact"
-                element={
-                  <Layout>
-                    <Contact />
-                  </Layout>
-                }
-              />
-              {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-              <Route
-                path="*"
-                element={
-                  <Layout>
-                    <NotFound />
-                  </Layout>
-                }
-              />
-            </Routes>
+            <AppRoutes />
           </BrowserRouter>
         </TooltipProvider>
       </QueryClientProvider>
