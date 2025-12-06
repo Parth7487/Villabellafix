@@ -182,16 +182,6 @@ const Header = ({ showAlways = false }: HeaderProps) => {
                 <Search size={18} className="sm:w-5 sm:h-5" />
               </button>
               <button
-                className={`transition-all duration-300 hidden sm:flex items-center justify-center p-2 rounded-full hover:scale-110 ${
-                  shouldShowHeader
-                    ? "text-stone-700 hover:text-stone-900 hover:bg-stone-100"
-                    : "text-white/70 hover:text-white hover:bg-white/10"
-                }`}
-                aria-label="Wishlist"
-              >
-                <Heart size={18} className="sm:w-5 sm:h-5" />
-              </button>
-              <button
                 className={`transition-all duration-300 relative flex items-center justify-center p-2 rounded-full hover:scale-110 ${
                   shouldShowHeader
                     ? "text-stone-700 hover:text-stone-900 hover:bg-stone-100"
