@@ -1,4 +1,4 @@
-import { Truck, RotateCcw, Lock } from "lucide-react";
+import { Leaf, Truck, RotateCcw, Award } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function TrustBar() {
@@ -10,8 +10,25 @@ export default function TrustBar() {
         {t("trust.buyWithConfidence")}
       </h4>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {/* Delivery */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        {/* Eco-Friendly */}
+        <div className="flex gap-4">
+          <div className="flex-shrink-0">
+            <div className="flex items-center justify-center h-10 w-10 rounded-full bg-stone-900 border border-stone-700">
+              <Leaf size={20} className="text-stone-100" />
+            </div>
+          </div>
+          <div>
+            <p className="text-sm font-light text-stone-900">
+              Eco-Friendly
+            </p>
+            <p className="text-xs text-stone-500 font-light mt-1">
+              Sustainable materials
+            </p>
+          </div>
+        </div>
+
+        {/* Free Shipping */}
         <div className="flex gap-4">
           <div className="flex-shrink-0">
             <div className="flex items-center justify-center h-10 w-10 rounded-full bg-stone-900 border border-stone-700">
@@ -20,15 +37,15 @@ export default function TrustBar() {
           </div>
           <div>
             <p className="text-sm font-light text-stone-900">
-              {t("trust.delivery")}
+              Free Shipping
             </p>
             <p className="text-xs text-stone-500 font-light mt-1">
-              {t("trust.deliveryDesc")}
+              On orders over $50
             </p>
           </div>
         </div>
 
-        {/* Returns */}
+        {/* Easy Returns */}
         <div className="flex gap-4">
           <div className="flex-shrink-0">
             <div className="flex items-center justify-center h-10 w-10 rounded-full bg-stone-900 border border-stone-700">
@@ -37,34 +54,28 @@ export default function TrustBar() {
           </div>
           <div>
             <p className="text-sm font-light text-stone-900">
-              {t("trust.returns")}
+              Easy Returns
             </p>
             <p className="text-xs text-stone-500 font-light mt-1">
-              {t("trust.returnsDesc")}
+              30-day return policy
             </p>
           </div>
         </div>
 
-        {/* Secure Payment */}
+        {/* Quality Guaranteed */}
         <div className="flex gap-4">
           <div className="flex-shrink-0">
             <div className="flex items-center justify-center h-10 w-10 rounded-full bg-stone-900 border border-stone-700">
-              <Lock size={20} className="text-stone-100" />
+              <Award size={20} className="text-stone-100" />
             </div>
           </div>
           <div>
             <p className="text-sm font-light text-stone-900">
-              {t("trust.securePayment")}
+              Quality Guaranteed
             </p>
-            <div className="flex gap-2 mt-1">
-              <div className="w-6 h-4 bg-blue-600 rounded text-xs flex items-center justify-center text-white font-bold">
-                V
-              </div>
-              <div className="w-6 h-4 bg-blue-900 rounded text-xs flex items-center justify-center text-white font-bold">
-                M
-              </div>
-              <span className="text-xs text-stone-500 font-light">VIPPS</span>
-            </div>
+            <p className="text-xs text-stone-500 font-light mt-1">
+              Premium craftsmanship
+            </p>
           </div>
         </div>
       </div>
