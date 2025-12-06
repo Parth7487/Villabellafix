@@ -1,9 +1,11 @@
 # COMPLETE LAYOUT DOCUMENTATION
+
 ## Products (Collection) Page & Contact Page
 
 ---
 
 # TABLE OF CONTENTS
+
 1. [PRODUCTS/COLLECTION PAGE](#products-collection-page)
    - Hero Banner Section
    - Products Grid Section
@@ -19,11 +21,13 @@
 # PRODUCTS / COLLECTION PAGE
 
 ## SECTION 1: PAGE HERO BANNER
+
 **File:** `client/pages/Products.tsx` (Lines 13-42)
 
 ### Layout Structure
+
 - **Container Type:** Full-width relative positioned section
-- **Height:** 
+- **Height:**
   - Mobile: `h-64` (256px)
   - Small screens: `sm:h-80` (320px)
   - Medium & up: `md:h-96` (384px)
@@ -31,6 +35,7 @@
 - **Background Color:** `#1c1917` (Dark Stone)
 
 ### Background Image
+
 - **Image URL:** Builder.io asset (Products banner image)
 - **Dimensions:** 1200px width × 400px height
 - **Object Fit:** Cover
@@ -38,6 +43,7 @@
 - **Overlay:** Black overlay with 30% opacity (`bg-black/30`)
 
 ### Content Container
+
 - **Type:** Flex column, centered
 - **Padding:**
   - Horizontal: `px-4` (16px mobile) | `sm:px-6` (24px) | `lg:px-8` (32px)
@@ -50,6 +56,7 @@
 ### Content Elements
 
 #### Label (Breadcrumb)
+
 - **Font Size:** `text-xs` (12px)
 - **Font Weight:** `font-light` (300)
 - **Letter Spacing:** `tracking-widest` (0.15em)
@@ -59,7 +66,8 @@
 - **Translation Key:** `products.pageLabel` (Default: "Products")
 
 #### Main Heading
-- **Font Size:** 
+
+- **Font Size:**
   - Mobile: `text-4xl` (36px)
   - Small: `sm:text-5xl` (48px)
   - Medium: `md:text-6xl` (60px)
@@ -71,6 +79,7 @@
 - **Translation Key:** `products.pageHeading` (Default: "Our Handmade Pillows")
 
 #### Subheading/Description
+
 - **Font Size:**
   - Mobile: `text-sm` (14px)
   - Small: `sm:text-base` (16px)
@@ -84,9 +93,11 @@
 ---
 
 ## SECTION 2: PRODUCTS GRID
+
 **File:** `client/pages/Products.tsx` (Lines 43-77)
 
 ### Section Container
+
 - **Padding:**
   - Vertical: `py-16` (64px mobile) | `md:py-24` (96px desktop)
   - Horizontal: `px-4` (16px) | `sm:px-6` (24px) | `lg:px-8` (32px)
@@ -95,10 +106,12 @@
 - **Margin:** `mx-auto`
 
 ### Section Header
+
 - **Container:** Text centered
 - **Margin Bottom:** `mb-12` (48px) | `md:mb-16` (64px)
 
 #### Section Heading
+
 - **Font Size:** `text-3xl` (30px) | `md:text-4xl` (36px)
 - **Font Weight:** `font-light` (300)
 - **Letter Spacing:** `tracking-tight`
@@ -107,6 +120,7 @@
 - **Translation Key:** `products.collectionHeading` (Default: "Our Collection")
 
 #### Section Description
+
 - **Font Size:** Default (16px)
 - **Font Weight:** `font-light` (300)
 - **Color:** `text-stone-600`
@@ -115,6 +129,7 @@
 - **Translation Key:** `products.collectionDescription`
 
 ### Products Grid Layout
+
 - **Grid Type:** CSS Grid
 - **Columns:**
   - Mobile: `grid-cols-1` (1 column)
@@ -123,6 +138,7 @@
 - **Margin Bottom:** `mb-20` (80px)
 
 ### Individual Product Card (Link Wrapper)
+
 - **Component:** ProductCard component (see ProductCard.tsx details)
 - **Link Styling:**
   - Group: `group` (for child transitions)
@@ -132,13 +148,16 @@
 ---
 
 ## PRODUCT CARD COMPONENT DETAILS
+
 **File:** `client/components/ProductCard.tsx`
 
 ### Card Container
+
 - **Type:** Div with hover group
 - **Mouse Events:** Hover triggers image rotation
 
 ### Image Container
+
 - **Height:**
   - Mobile: `h-64` (256px)
   - Small: `sm:h-80` (320px)
@@ -151,6 +170,7 @@
 - **Transition:** `transition duration-300`
 
 ### Image Stack
+
 - **Behavior:** Multiple images cycle on hover every 2000ms (2 seconds)
 - **Opacity Transition:** `duration-500` between images
 - **Indicator Dots:**
@@ -161,27 +181,32 @@
   - Gap: `gap-1` (4px)
 
 ### Product Title
+
 - **Font Size:** `text-xl` (20px)
 - **Color:** `text-stone-900`
 - **Font Weight:** `font-light` (300)
 - **Margin Bottom:** `mb-2` (8px)
 
 ### Product Description
+
 - **Font Size:** `text-sm` (14px)
 - **Color:** `text-stone-600`
 - **Font Weight:** `font-light` (300)
 - **Margin Bottom:** `mb-4` (16px)
 
 ### Price & CTA Row
+
 - **Layout:** Flex, space-between
 - **Alignment:** Items center, justify-between
 
 #### Price
+
 - **Font Size:** `text-lg` (18px)
 - **Color:** `text-stone-900`
 - **Font Weight:** Default
 
 #### Arrow Icon
+
 - **Size:** 18px
 - **Color:** `text-stone-700`
 - **Transition:** `group-hover:translate-x-1` (1px right on hover)
@@ -190,9 +215,11 @@
 ---
 
 ## SECTION 3: BUNDLE SECTION
+
 **File:** `client/pages/Products.tsx` (Lines 79-234)
 
 ### Section Container
+
 - **Padding:**
   - Vertical: `py-20` (80px mobile) | `md:py-28` (112px desktop)
   - Horizontal: `px-4` (16px) | `sm:px-6` (24px) | `lg:px-8` (32px)
@@ -202,10 +229,12 @@
 - **Margin:** `mx-auto`
 
 ### Section Header
+
 - **Text Alignment:** Center
 - **Margin Bottom:** `mb-16` (64px) | `md:mb-20` (80px)
 
 #### Label
+
 - **Font Size:** `text-xs` (12px)
 - **Font Weight:** `font-light` (300)
 - **Letter Spacing:** `tracking-widest` (0.15em)
@@ -214,6 +243,7 @@
 - **Margin Bottom:** `mb-3` (12px)
 
 #### Main Heading
+
 - **Font Size:** `text-4xl` (36px) | `md:text-5xl` (48px)
 - **Font Weight:** `font-light` (300)
 - **Letter Spacing:** `tracking-tight`
@@ -221,6 +251,7 @@
 - **Margin Bottom:** `mb-6` (24px)
 
 #### Description
+
 - **Font Size:** `text-lg` (18px)
 - **Font Weight:** `font-light` (300)
 - **Color:** `text-stone-600`
@@ -228,12 +259,14 @@
 - **Margin:** `mx-auto`
 
 ### Bundle Options Grid (2 Cards)
+
 - **Grid:** 1 column mobile, 2 columns on medium screens (`grid-cols-1 md:grid-cols-2`)
 - **Gap:** `gap-8` (32px) | `md:gap-6` (24px)
 - **Max Width:** `max-w-4xl` (896px)
 - **Margin:** `mx-auto`
 
 #### Card 1: Cover Only Option
+
 - **Container:**
   - Padding: `p-8` (32px) | `md:p-10` (40px)
   - Border: `border border-stone-200`
@@ -268,7 +301,6 @@
 - **Price Section:**
   - Margin Top: `mt-auto` (push to bottom)
   - Spacing: `space-y-6` (24px gap)
-  
   - Price Display:
     - Flex items-baseline
     - Gap: `gap-2` (8px)
@@ -291,6 +323,7 @@
   - Text: "Velg"
 
 #### Card 2: With Pillow Option
+
 - **Container:**
   - Padding: `p-8` (32px) | `md:p-10` (40px)
   - Border: `border-2 border-stone-900` (thicker border, emphasized)
@@ -337,17 +370,14 @@
 - **Price Section:**
   - Margin Top: `mt-auto`
   - Spacing: `space-y-6` (24px)
-  
   - Price Container:
     - Margin Bottom: `mb-2` (8px)
     - Flex items-baseline
     - Gap: `gap-2` (8px)
-  
   - Price:
     - Amount: `text-4xl` (36px), `font-light`, `text-white`
     - Currency: `text-sm` (14px), `text-stone-400`
     - Value: "1099 kr"
-  
   - Savings:
     - Font Size: `text-sm` (14px)
     - Color: `text-stone-400`
@@ -369,12 +399,15 @@
   - Text: "Velg"
 
 ### Bundle Deals - Buy More Save More
+
 **Sub-Section Container:**
+
 - **Margin Top:** `mt-20` (80px)
 - **Padding Top:** `pt-20` (80px)
 - **Border Top:** `border-t border-stone-200`
 
 **Header:**
+
 - Text Alignment: Center
 - Margin Bottom: `mb-12` (48px)
 
@@ -392,12 +425,14 @@
   - Color: `text-stone-600`
 
 **Grid Layout:**
+
 - Columns: 1 mobile, 2 on medium (`grid-cols-1 md:grid-cols-2`)
 - Gap: `gap-6` (24px)
 - Max Width: `max-w-2xl` (672px)
 - Margin: `mx-auto`
 
 #### Card: Buy 2 Pillows
+
 - **Container:**
   - Border: `border border-stone-200`
   - Hover: `hover:border-stone-900`
@@ -455,6 +490,7 @@
     - Text: "Velg bundle"
 
 #### Card: Buy 3 Pillows (Best Value)
+
 - **Container:**
   - Border: `border-2 border-stone-900` (thicker, emphasized)
   - Background: `bg-stone-900` (dark)
@@ -525,9 +561,11 @@
 ---
 
 ## SECTION 4: LIFESTYLE GALLERY
+
 **File:** `client/pages/Products.tsx` (Lines 236-307)
 
 ### Section Container
+
 - **Padding:**
   - Vertical: `py-20` (80px) | `md:py-32` (128px)
   - Horizontal: `px-4` (16px) | `sm:px-6` (24px) | `lg:px-8` (32px)
@@ -536,10 +574,12 @@
 - **Margin:** `mx-auto`
 
 ### Section Header
+
 - **Text Alignment:** Center
 - **Margin Bottom:** `mb-16` (64px) | `md:mb-20` (80px)
 
 #### Label
+
 - **Font Size:** `text-xs` (12px)
 - **Font Weight:** `font-light`
 - **Letter Spacing:** `tracking-widest`
@@ -549,6 +589,7 @@
 - **Translation Key:** `products.lifestyleLabel` (Default: "Lifestyle")
 
 #### Main Heading
+
 - **Font Size:** `text-4xl` (36px) | `md:text-5xl` (48px)
 - **Font Weight:** `font-light`
 - **Letter Spacing:** `tracking-tight`
@@ -557,6 +598,7 @@
 - **Translation Key:** `products.lifestyleHeading` (Default: "VillaBella Lifestyle")
 
 #### Description
+
 - **Font Size:** `text-lg` (18px)
 - **Font Weight:** `font-light`
 - **Color:** `text-stone-300`
@@ -565,6 +607,7 @@
 - **Translation Key:** `products.lifestyleDescription`
 
 ### Masonry Gallery Layout
+
 - **Layout Type:** CSS Columns (Masonry)
 - **Columns:**
   - Mobile: `columns-1` (1 column)
@@ -574,6 +617,7 @@
 - **Space Between:** `space-y-8` (32px vertical spacing)
 
 ### Gallery Image Cards (6 total)
+
 - **Container:**
   - Break: `break-inside-avoid` (prevents breaking in middle)
   - Overflow: Hidden
@@ -591,6 +635,7 @@
   - Dimensions: 600px width × 700px height
 
 ### Images in Gallery:
+
 1. Rattan Chair - VillaBella Cushion
 2. Beach Peacock - Cushion at Beach
 3. Tote Bag Detail - with Cushion
@@ -601,9 +646,11 @@
 ---
 
 ## SECTION 5: TRUST BAR
+
 **File:** `client/pages/Products.tsx` (Lines 309-376)
 
 ### Section Container
+
 - **Padding:**
   - Vertical: `py-20` (80px) | `md:py-28` (112px)
   - Horizontal: `px-4` (16px) | `sm:px-6` (24px) | `lg:px-8` (32px)
@@ -613,10 +660,12 @@
 - **Margin:** `mx-auto`
 
 ### Section Header
+
 - **Text Alignment:** Center
 - **Margin Bottom:** `mb-12` (48px) | `md:mb-16` (64px)
 
 #### Heading
+
 - **Font Size:** `text-2xl` (24px) | `md:text-3xl` (30px)
 - **Font Weight:** `font-light`
 - **Letter Spacing:** `tracking-tight`
@@ -625,6 +674,7 @@
 - **Translation Key:** `products.whyChoose` (Default: "Why Choose VillaBella")
 
 #### Description
+
 - **Font Size:** Default (16px)
 - **Font Weight:** `font-light`
 - **Color:** `text-stone-600`
@@ -633,22 +683,26 @@
 - **Translation Key:** `products.whyChooseDesc`
 
 ### Trust Items Grid
+
 - **Grid:** 4 columns on medium screens (`md:grid-cols-4`)
 - **Fallback:** 1 column mobile (`grid-cols-1`)
 - **Gap:** `gap-8` (32px)
 
 ### Individual Trust Item (4 total)
+
 1. Delivery
 2. Made in Europe
 3. Returns
 4. Norwegian Shop
 
 #### Item Container
+
 - **Layout:** Flex column
 - **Text Alignment:** Center
 - **Spacing:** `space-y-4` (16px between elements)
 
 #### Icon Container
+
 - **Display:** Flex, justify center
 - **Width:** `w-16` (64px)
 - **Height:** `h-16` (64px)
@@ -658,22 +712,25 @@
 - **Border:** `border border-stone-700`
 
 #### Icon
+
 - **Size:** 28px
 - **Color:** `text-stone-100`
 - **Icons Used:** Truck, Leaf, RotateCcw, CheckCircle (from Lucide)
 
 #### Title
+
 - **Font Size:** `text-lg` (18px)
 - **Font Weight:** `font-light`
 - **Color:** `text-stone-900`
-- **Translation Keys:** 
+- **Translation Keys:**
   - `trust.delivery`, `trust.madeInEurope`, `trust.returns`, `trust.norwegianShop`
 
 #### Description
+
 - **Font Size:** `text-sm` (14px)
 - **Font Weight:** `font-light`
 - **Color:** `text-stone-600`
-- **Translation Keys:** 
+- **Translation Keys:**
   - `trust.deliveryDesc`, `trust.madeInEuropeDesc`, `trust.returnsDesc`, `trust.norwegianShopDesc`
 
 ---
@@ -681,9 +738,11 @@
 # CONTACT PAGE
 
 ## SECTION 1: HERO SECTION
+
 **File:** `client/pages/Contact.tsx` (Lines 22-53)
 
 ### Section Container
+
 - **Layout:** Relative positioned
 - **Padding:**
   - Vertical: `py-20` (80px mobile) | `md:py-32` (128px desktop)
@@ -691,6 +750,7 @@
 - **Overflow:** Hidden
 
 ### Background
+
 - **Background Color:** `#1c1917` (Dark Stone)
 - **Background Image:** Textured pattern (repeating)
 - **Background Size:** Auto
@@ -699,11 +759,13 @@
 - **Background Attachment:** Scroll
 
 ### Overlay
+
 - **Position:** Absolute, full coverage (`inset-0`)
 - **Gradient:** `bg-gradient-to-br from-stone-900/90 to-stone-950/90`
 - **Pointer Events:** None (non-interactive)
 
 ### Content Container
+
 - **Position:** Relative
 - **Z-index:** `z-10` (above overlay)
 - **Max Width:** `max-w-7xl` (1280px)
@@ -714,6 +776,7 @@
 - **Text Alignment:** Center
 
 #### Main Heading
+
 - **Font Size:** `text-5xl` (48px) | `md:text-6xl` (60px)
 - **Font Weight:** `font-light`
 - **Letter Spacing:** `tracking-tight`
@@ -722,6 +785,7 @@
 - **Translation Key:** `contact.title` (Default: "Get in Touch")
 
 #### Subtitle
+
 - **Font Size:** `text-lg` (18px)
 - **Font Weight:** `font-light`
 - **Color:** `text-stone-300`
@@ -732,9 +796,11 @@
 ---
 
 ## SECTION 2: CONTACT INFORMATION & FORM
+
 **File:** `client/pages/Contact.tsx` (Lines 54-210)
 
 ### Section Container
+
 - **Padding:**
   - Vertical: `py-20` (80px mobile) | `md:py-32` (128px desktop)
   - Horizontal: `px-4` (16px) | `sm:px-6` (24px) | `lg:px-8` (32px)
@@ -743,6 +809,7 @@
 - **Margin:** `mx-auto`
 
 ### Main Grid
+
 - **Grid Layout:** 3 columns on large screens
 - **Column Span:** 1st col spans 1, 2nd spans 2 on large screens
 - **Fallback:** 1 column mobile (`grid-cols-1 lg:grid-cols-3`)
@@ -754,16 +821,19 @@
 ### LEFT COLUMN: CONTACT INFORMATION (3 Cards)
 
 #### Contact Info Card Container
+
 - **Spacing:** `space-y-8` (32px between cards)
 
 #### Individual Contact Item (Email, Phone, Address)
 
 **Icon & Title Row:**
+
 - **Layout:** Flex, items center
 - **Gap:** `gap-4` (16px)
 - **Margin Bottom:** `mb-4` (16px)
 
 ##### Icon Container
+
 - **Width:** `w-12` (48px)
 - **Height:** `h-12` (48px)
 - **Background:** `bg-stone-900`
@@ -772,17 +842,20 @@
 - **Display:** Flex items center justify center
 
 ##### Icon
+
 - **Size:** 24px
 - **Color:** `text-stone-100`
 - **Icons:** Mail, Phone, MapPin (from Lucide)
 
 ##### Title
+
 - **Font Size:** `text-lg` (18px)
 - **Font Weight:** `font-light`
 - **Color:** `text-stone-900`
 - **Translation Keys:** `contact.email`, `contact.phone`, `contact.address`
 
 **Contact Details:**
+
 - **Main Info:**
   - Font Size: Default (16px)
   - Color: `text-stone-600`
@@ -808,12 +881,14 @@
 ### RIGHT COLUMN: CONTACT FORM (Spans 2 columns)
 
 #### Form Container
+
 - **Layout:** Form element
 - **Spacing:** `space-y-6` (24px between fields)
 
 #### Form Field (4 total: Name, Email, Subject, Message)
 
 **Label:**
+
 - **Display:** Block
 - **Font Size:** `text-sm` (14px)
 - **Font Weight:** `font-light`
@@ -822,6 +897,7 @@
 - **Text Content:** Translated based on field type
 
 **Text Input (Name, Email, Subject):**
+
 - **Width:** `w-full` (100%)
 - **Padding:**
   - Horizontal: `px-6` (24px)
@@ -842,6 +918,7 @@
 - **Placeholders:** Translated keys `contact.namePlaceholder`, etc.
 
 **Textarea (Message):**
+
 - **Width:** `w-full` (100%)
 - **Padding:**
   - Horizontal: `px-6` (24px)
@@ -860,6 +937,7 @@
 - **Placeholder:** Translated key `contact.messagePlaceholder`
 
 #### Submit Button
+
 - **Width:** `w-full` (100%)
 - **Padding:**
   - Horizontal: `px-8` (32px)
@@ -883,12 +961,14 @@
 ## COLOR PALETTE REFERENCE
 
 ### Primary Colors
+
 - **Dark Stone:** `#1c1917` (rgb(28, 25, 23))
 - **Stone 900:** `#1c1917`
 - **Stone 950:** `#0c0808`
 - **White:** `#ffffff`
 
 ### Gray/Stone Palette
+
 - **Stone 50:** `#faf9f8`
 - **Stone 100:** `#f5f3f1`
 - **Stone 200:** `#e7e5e4`
@@ -900,6 +980,7 @@
 - **Stone 800:** `#292524`
 
 ### Accent Colors
+
 - **Emerald 50:** `#f0fdf4` (light green background)
 - **Emerald 500:** `#10b981` (bright green badge)
 - **Emerald 600:** `#059669` (darker green badge)
@@ -910,15 +991,18 @@
 ## FONT SPECIFICATIONS
 
 ### Font Family
+
 - **Primary Font:** Playfair Display, serif
 - **Fallback:** Serif
 
 ### Font Weights Used
+
 - **Light:** 300
 - **Regular:** 400 (default)
 - **Bold:** 600-700 (not commonly used, minimalist design)
 
 ### Font Size Scale
+
 - `text-xs` = 12px
 - `text-sm` = 14px
 - `text-base` = 16px (default)
@@ -931,12 +1015,14 @@
 - `text-6xl` = 60px
 
 ### Letter Spacing
+
 - `tracking-tight` = -0.025em
 - `tracking-wide` = 0.025em
 - `tracking-wider` = 0.05em
 - `tracking-widest` = 0.15em
 
 ### Line Height
+
 - `leading-relaxed` = 1.625 (comfortable reading)
 - Default = 1.5
 
@@ -945,6 +1031,7 @@
 ## SPACING & GAPS REFERENCE
 
 ### Padding/Margin Units (Tailwind Scale)
+
 - 1 = 4px
 - 2 = 8px
 - 3 = 12px
@@ -960,6 +1047,7 @@
 - 32 = 128px
 
 ### Gap/Space Values
+
 - `gap-1` = 4px
 - `gap-2` = 8px
 - `gap-4` = 16px
@@ -975,6 +1063,7 @@
 ## RESPONSIVE BREAKPOINTS
 
 ### Tailwind Breakpoints Used
+
 - **Mobile First:** Default (0px+)
 - **Small (sm):** 640px+
 - **Medium (md):** 768px+
@@ -983,6 +1072,7 @@
 - **2XL (2xl):** 1536px+
 
 ### Max Width Container
+
 - **`max-w-7xl`:** 1280px (primary container width for both pages)
 
 ---
@@ -990,10 +1080,12 @@
 ## TRANSITIONS & ANIMATIONS
 
 ### Transition Durations
+
 - `duration-300` = 300ms (most common)
 - `duration-500` = 500ms (image fades, gallery)
 
 ### Transition Effects Used
+
 - Opacity transitions on images
 - Scale/zoom on hover (`hover:scale-105`)
 - Color changes on hover
@@ -1001,6 +1093,7 @@
 - Shadow changes
 
 ### Hover Effects
+
 - Icons: `group-hover:translate-x-1` (1px right movement)
 - Images: `hover:scale-105` (5% zoom)
 - Cards: Border color and shadow changes
@@ -1021,17 +1114,17 @@
 
 ## SUMMARY TABLE: KEY MEASUREMENTS
 
-| Element | Mobile | Tablet | Desktop |
-|---------|--------|--------|---------|
-| Hero Height | 256px | 320px | 384px |
-| Product Grid Cols | 1 | 1 | 3 |
-| Bundle Grid Cols | 1 | 2 | 2 |
-| Gallery Cols | 1 | 2 | 3 |
-| Trust Grid Cols | 1 | 4 | 4 |
-| Contact Form Cols | 1 | 1 | 3 |
-| Container Padding | 16px | 24px | 32px |
-| Section Padding Y | 64px | 96px | 96-128px |
-| Main Container Width | 100% | 100% | 1280px |
+| Element              | Mobile | Tablet | Desktop  |
+| -------------------- | ------ | ------ | -------- |
+| Hero Height          | 256px  | 320px  | 384px    |
+| Product Grid Cols    | 1      | 1      | 3        |
+| Bundle Grid Cols     | 1      | 2      | 2        |
+| Gallery Cols         | 1      | 2      | 3        |
+| Trust Grid Cols      | 1      | 4      | 4        |
+| Contact Form Cols    | 1      | 1      | 3        |
+| Container Padding    | 16px   | 24px   | 32px     |
+| Section Padding Y    | 64px   | 96px   | 96-128px |
+| Main Container Width | 100%   | 100%   | 1280px   |
 
 ---
 

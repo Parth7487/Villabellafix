@@ -112,8 +112,12 @@ export default function Products() {
 
                 <div className="mt-auto space-y-6">
                   <div className="flex items-baseline gap-2">
-                    <span className="text-4xl font-light text-stone-900">599</span>
-                    <span className="text-sm text-stone-500 font-light">kr</span>
+                    <span className="text-4xl font-light text-stone-900">
+                      599
+                    </span>
+                    <span className="text-sm text-stone-500 font-light">
+                      kr
+                    </span>
                   </div>
 
                   <button className="w-full px-6 py-4 bg-stone-900 hover:bg-stone-800 text-white font-light uppercase tracking-wider text-sm rounded-sm transition duration-300">
@@ -151,8 +155,12 @@ export default function Products() {
                 <div className="mt-auto space-y-6">
                   <div>
                     <div className="flex items-baseline gap-2 mb-2">
-                      <span className="text-4xl font-light text-white">1099</span>
-                      <span className="text-sm text-stone-400 font-light">kr</span>
+                      <span className="text-4xl font-light text-white">
+                        1099
+                      </span>
+                      <span className="text-sm text-stone-400 font-light">
+                        kr
+                      </span>
                     </div>
                     <p className="text-sm text-stone-400 font-light">
                       Spar 100 kr
@@ -195,8 +203,12 @@ export default function Products() {
 
                   <div className="space-y-4">
                     <div className="flex items-baseline justify-center gap-2">
-                      <span className="text-3xl font-light text-stone-900">2 499</span>
-                      <span className="text-sm text-stone-500 font-light">kr</span>
+                      <span className="text-3xl font-light text-stone-900">
+                        2 499
+                      </span>
+                      <span className="text-sm text-stone-500 font-light">
+                        kr
+                      </span>
                     </div>
                     <button className="w-full px-6 py-3 bg-stone-900 hover:bg-stone-800 text-white font-light uppercase tracking-wider text-xs rounded-sm transition duration-300">
                       Velg bundle
@@ -227,8 +239,12 @@ export default function Products() {
 
                   <div className="space-y-4">
                     <div className="flex items-baseline justify-center gap-2">
-                      <span className="text-3xl font-light text-white">3 499</span>
-                      <span className="text-sm text-stone-400 font-light">kr</span>
+                      <span className="text-3xl font-light text-white">
+                        3 499
+                      </span>
+                      <span className="text-sm text-stone-400 font-light">
+                        kr
+                      </span>
                     </div>
                     <button className="w-full px-6 py-3 bg-white hover:bg-stone-50 text-stone-900 font-light uppercase tracking-wider text-xs rounded-sm transition duration-300">
                       Velg bundle
