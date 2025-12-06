@@ -208,62 +208,6 @@ export default function Contact() {
         </div>
       </section>
 
-      {/* FAQ Section */}
-      <section className="py-20 md:py-32 bg-stone-50">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-5xl font-light tracking-tight text-stone-900 mb-4">
-              {t("contact.faqTitle") || "Frequently Asked Questions"}
-            </h2>
-          </div>
-
-          <div className="space-y-6">
-            {/* FAQ Item 1 */}
-            <div className="bg-white rounded-lg p-8 border border-stone-200">
-              <h3 className="text-lg font-light text-stone-900 mb-3">
-                {t("contact.faq1Q") || "How long does shipping take?"}
-              </h3>
-              <p className="text-stone-600 font-light leading-relaxed">
-                {t("contact.faq1A") ||
-                  "We offer 3-5 day delivery from our warehouse in Norway to most locations in Scandinavia and Europe."}
-              </p>
-            </div>
-
-            {/* FAQ Item 2 */}
-            <div className="bg-white rounded-lg p-8 border border-stone-200">
-              <h3 className="text-lg font-light text-stone-900 mb-3">
-                {t("contact.faq2Q") || "What is your return policy?"}
-              </h3>
-              <p className="text-stone-600 font-light leading-relaxed">
-                {t("contact.faq2A") ||
-                  "We offer a 14-day open purchase guarantee. If you're not completely satisfied, you can return your purchase for a full refund."}
-              </p>
-            </div>
-
-            {/* FAQ Item 3 */}
-            <div className="bg-white rounded-lg p-8 border border-stone-200">
-              <h3 className="text-lg font-light text-stone-900 mb-3">
-                {t("contact.faq3Q") || "Do you ship internationally?"}
-              </h3>
-              <p className="text-stone-600 font-light leading-relaxed">
-                {t("contact.faq3A") ||
-                  "Yes, we ship to select countries across Europe. Contact us for shipping rates and options for your location."}
-              </p>
-            </div>
-
-            {/* FAQ Item 4 */}
-            <div className="bg-white rounded-lg p-8 border border-stone-200">
-              <h3 className="text-lg font-light text-stone-900 mb-3">
-                {t("contact.faq4Q") || "Can I customize my order?"}
-              </h3>
-              <p className="text-stone-600 font-light leading-relaxed">
-                {t("contact.faq4A") ||
-                  "We offer limited customization options. Please contact us directly to discuss your specific needs and requirements."}
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
   );
 }
