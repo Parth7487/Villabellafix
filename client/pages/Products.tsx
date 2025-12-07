@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { useCurrency } from "@/contexts/CurrencyContext";
 import ProductCard from "@/components/ProductCard";
+import BundleSection from "@/components/BundleSection";
 import { products } from "@/data/products";
 import { Leaf, Truck, RotateCcw, CheckCircle } from "lucide-react";
 
