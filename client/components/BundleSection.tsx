@@ -51,7 +51,7 @@ export default function BundleSection() {
     <section className="py-8 md:py-12 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="max-w-2xl mx-auto text-center mb-16">
+        <div className="max-w-2xl mx-auto text-center mb-10">
           <span className="text-xs tracking-[0.2em] font-light text-stone-600 uppercase block mb-3">
             {t("bundle.sectionTitle")}
           </span>
