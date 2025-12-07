@@ -181,7 +181,7 @@ export default function BundleSection() {
                       : "bg-stone-900 hover:bg-stone-800 text-white"
                   }`}
                 >
-                  Velg
+                  {t("bundle.choose")}
                 </button>
               </div>
             </div>
