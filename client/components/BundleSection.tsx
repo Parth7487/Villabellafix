@@ -53,10 +53,10 @@ export default function BundleSection() {
         {/* Section Header */}
         <div className="max-w-2xl mx-auto text-center mb-16">
           <span className="text-xs tracking-[0.2em] font-light text-stone-600 uppercase block mb-3">
-            Velg ditt sett
+            {t("bundle.sectionTitle")}
           </span>
           <h2 className="text-4xl md:text-5xl font-light text-stone-900 leading-tight">
-            Smarte pakker for alle
+            {t("bundle.sectionHeading")}
           </h2>
         </div>
 
