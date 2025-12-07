@@ -90,7 +90,7 @@ export default function BundleSection() {
                 {bundle.isPopular && (
                   <div className="absolute top-4 right-4 z-20">
                     <span className="inline-block px-3 py-1 bg-emerald-500 text-white text-xs tracking-[0.15em] font-light uppercase rounded-full">
-                      Populær
+                      {t("bundle.popular")}
                     </span>
                   </div>
                 )}
