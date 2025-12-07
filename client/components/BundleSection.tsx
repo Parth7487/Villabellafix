@@ -193,19 +193,19 @@ export default function BundleSection() {
           <div className="flex items-center gap-3">
             <div className="w-1 h-1 rounded-full bg-stone-900"></div>
             <p className="text-xs tracking-[0.1em] font-light text-stone-600 uppercase">
-              Gratis frakt
+              {t("bundle.freeShipping")}
             </p>
           </div>
           <div className="flex items-center gap-3">
             <div className="w-1 h-1 rounded-full bg-stone-900"></div>
             <p className="text-xs tracking-[0.1em] font-light text-stone-600 uppercase">
-              30 dager retur
+              {t("bundle.thirtyDayReturn")}
             </p>
           </div>
           <div className="flex items-center gap-3">
             <div className="w-1 h-1 rounded-full bg-stone-900"></div>
             <p className="text-xs tracking-[0.1em] font-light text-stone-600 uppercase">
-              Håndlagd i Norge
+              {t("bundle.handmadeNorway")}
             </p>
           </div>
         </div>
