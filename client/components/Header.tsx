@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Search, Heart, ShoppingBag, User } from "lucide-react";
+import { Menu, X, Search, ShoppingBag, User } from "lucide-react";
 import { useState, useEffect } from "react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { useCurrency } from "@/contexts/CurrencyContext";
@@ -180,16 +180,6 @@ const Header = ({ showAlways = false }: HeaderProps) => {
                 aria-label="Search"
               >
                 <Search size={18} className="sm:w-5 sm:h-5" />
-              </button>
-              <button
-                className={`transition-all duration-300 hidden sm:flex items-center justify-center p-2 rounded-full hover:scale-110 ${
-                  shouldShowHeader
-                    ? "text-stone-700 hover:text-stone-900 hover:bg-stone-100"
-                    : "text-white/70 hover:text-white hover:bg-white/10"
-                }`}
-                aria-label="Wishlist"
-              >
-                <Heart size={18} className="sm:w-5 sm:h-5" />
               </button>
               <button
                 className={`transition-all duration-300 relative flex items-center justify-center p-2 rounded-full hover:scale-110 ${
