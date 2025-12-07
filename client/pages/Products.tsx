@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { useCurrency } from "@/contexts/CurrencyContext";
 import ProductCard from "@/components/ProductCard";
+import BundleSection from "@/components/BundleSection";
 import { products } from "@/data/products";
 import { Leaf, Truck, RotateCcw, CheckCircle } from "lucide-react";
 
@@ -40,10 +41,10 @@ export default function Products() {
       </section>
 
       {/* Products Grid */}
-      <section className="py-16 md:py-24 bg-white">
+      <section className="py-12 md:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Section Introduction */}
-          <div className="text-center mb-12 md:mb-16">
+          <div className="text-center mb-6 md:mb-8">
             <h2 className="text-3xl md:text-4xl font-light tracking-tight text-stone-900 mb-4">
               {t("products.collectionHeading")}
             </h2>
@@ -53,7 +54,7 @@ export default function Products() {
           </div>
 
           {/* Products Grid */}
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-10 mb-20">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-10 mb-2">
             {products.map((product) => (
               <Link
                 key={product.id}
@@ -74,188 +75,7 @@ export default function Products() {
       </section>
 
       {/* Bundle Section */}
-      <section className="py-20 md:py-28 bg-white border-t border-stone-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Section Header */}
-          <div className="text-center mb-16 md:mb-20">
-            <p className="text-xs tracking-widest font-light text-stone-600 uppercase mb-3">
-              {t("bundle.multipleOffers")}
-            </p>
-            <h2 className="text-4xl md:text-5xl font-light tracking-tight text-stone-900 mb-6">
-              {t("bundle.selectProduct")}
-            </h2>
-            <p className="text-lg text-stone-600 font-light max-w-2xl mx-auto">
-              Oppdag hvordan du kan spare ved å kjøpe flere puter
-            </p>
-          </div>
-
-          {/* Bundle Options */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-6 max-w-4xl mx-auto">
-            {/* Cover Only Option */}
-            <div className="group cursor-pointer transition duration-300">
-              <div className="relative overflow-hidden rounded-lg border border-stone-200 hover:border-stone-400 transition duration-300 bg-gradient-to-br from-stone-50 to-white p-8 md:p-10 h-full flex flex-col">
-                <div className="mb-8">
-                  <div className="inline-block">
-                    <span className="text-xs tracking-widest font-light text-stone-500 uppercase">
-                      {t("bundle.coverOnly")}
-                    </span>
-                  </div>
-                </div>
-
-                <h3 className="text-2xl md:text-3xl font-light text-stone-900 mb-3">
-                  Putekasse alene
-                </h3>
-
-                <p className="text-sm text-stone-600 font-light mb-8 leading-relaxed">
-                  {t("bundle.coverOnlyDesc")}
-                </p>
-
-                <div className="mt-auto space-y-6">
-                  <div className="flex items-baseline gap-2">
-                    <span className="text-4xl font-light text-stone-900">
-                      599
-                    </span>
-                    <span className="text-sm text-stone-500 font-light">
-                      kr
-                    </span>
-                  </div>
-
-                  <button className="w-full px-6 py-4 bg-stone-900 hover:bg-stone-800 text-white font-light uppercase tracking-wider text-sm rounded-sm transition duration-300">
-                    Velg
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            {/* With Pillow Option */}
-            <div className="group cursor-pointer transition duration-300">
-              <div className="relative overflow-hidden rounded-lg border-2 border-stone-900 bg-gradient-to-br from-stone-900 to-stone-800 p-8 md:p-10 h-full flex flex-col">
-                <div className="absolute top-6 right-6">
-                  <span className="inline-block px-4 py-2 bg-stone-700 text-white text-xs font-light tracking-wider uppercase rounded-full">
-                    Populær
-                  </span>
-                </div>
-
-                <div className="mb-8">
-                  <div className="inline-block">
-                    <span className="text-xs tracking-widest font-light text-stone-400 uppercase">
-                      {t("bundle.withPillow")}
-                    </span>
-                  </div>
-                </div>
-
-                <h3 className="text-2xl md:text-3xl font-light text-white mb-3">
-                  Med innerpute
-                </h3>
-
-                <p className="text-sm text-stone-300 font-light mb-8 leading-relaxed">
-                  {t("bundle.withPillowDesc")}
-                </p>
-
-                <div className="mt-auto space-y-6">
-                  <div>
-                    <div className="flex items-baseline gap-2 mb-2">
-                      <span className="text-4xl font-light text-white">
-                        1099
-                      </span>
-                      <span className="text-sm text-stone-400 font-light">
-                        kr
-                      </span>
-                    </div>
-                    <p className="text-sm text-stone-400 font-light">
-                      Spar 100 kr
-                    </p>
-                  </div>
-
-                  <button className="w-full px-6 py-4 bg-white hover:bg-stone-50 text-stone-900 font-light uppercase tracking-wider text-sm rounded-sm transition duration-300">
-                    Velg
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Bundle Deals - Buy More Save More */}
-          <div className="mt-20 pt-20 border-t border-stone-200">
-            <div className="text-center mb-12">
-              <h3 className="text-3xl md:text-4xl font-light tracking-tight text-stone-900 mb-4">
-                Kjøp flere og spar!
-              </h3>
-              <p className="text-stone-600 font-light">
-                Eksklusiv rabatt når du kjøper flere puter
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl mx-auto">
-              {/* Buy 2 Pillows */}
-              <div className="group cursor-pointer transition duration-300">
-                <div className="relative overflow-hidden rounded-lg border border-stone-200 hover:border-stone-900 transition duration-300 bg-white p-8 text-center h-full flex flex-col justify-between">
-                  <div className="mb-6">
-                    <h4 className="text-xl font-light text-stone-900 mb-2">
-                      Kjøp 2 puter
-                    </h4>
-                    <div className="inline-block bg-emerald-50 px-4 py-2 rounded-sm">
-                      <p className="text-sm text-emerald-700 font-light">
-                        Spar ca. 399 kr
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="space-y-4">
-                    <div className="flex items-baseline justify-center gap-2">
-                      <span className="text-3xl font-light text-stone-900">
-                        2 499
-                      </span>
-                      <span className="text-sm text-stone-500 font-light">
-                        kr
-                      </span>
-                    </div>
-                    <button className="w-full px-6 py-3 bg-stone-900 hover:bg-stone-800 text-white font-light uppercase tracking-wider text-xs rounded-sm transition duration-300">
-                      Velg bundle
-                    </button>
-                  </div>
-                </div>
-              </div>
-
-              {/* Buy 3 Pillows */}
-              <div className="group cursor-pointer transition duration-300">
-                <div className="relative overflow-hidden rounded-lg border-2 border-stone-900 bg-stone-900 p-8 text-center h-full flex flex-col justify-between">
-                  <div className="absolute top-4 right-4">
-                    <span className="inline-block px-3 py-1 bg-emerald-500 text-white text-xs font-light tracking-wider uppercase rounded-full">
-                      Beste verdi
-                    </span>
-                  </div>
-
-                  <div className="mb-6">
-                    <h4 className="text-xl font-light text-white mb-2">
-                      Kjøp 3 puter
-                    </h4>
-                    <div className="inline-block bg-emerald-600 px-4 py-2 rounded-sm">
-                      <p className="text-sm text-white font-light">
-                        Spar ca. 899 kr
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="space-y-4">
-                    <div className="flex items-baseline justify-center gap-2">
-                      <span className="text-3xl font-light text-white">
-                        3 499
-                      </span>
-                      <span className="text-sm text-stone-400 font-light">
-                        kr
-                      </span>
-                    </div>
-                    <button className="w-full px-6 py-3 bg-white hover:bg-stone-50 text-stone-900 font-light uppercase tracking-wider text-xs rounded-sm transition duration-300">
-                      Velg bundle
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <BundleSection />
 
       {/* Lifestyle Gallery Section */}
       <section className="py-20 md:py-32 bg-gradient-to-br from-stone-950 via-stone-900 to-stone-950">
