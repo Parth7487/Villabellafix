@@ -41,7 +41,7 @@ export default function Products() {
       </section>
 
       {/* Products Grid */}
-      <section className="py-16 md:py-24 bg-white">
+      <section className="py-12 md:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Section Introduction */}
           <div className="text-center mb-12 md:mb-16">
@@ -54,7 +54,7 @@ export default function Products() {
           </div>
 
           {/* Products Grid */}
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-10 mb-8">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-10 mb-2">
             {products.map((product) => (
               <Link
                 key={product.id}
