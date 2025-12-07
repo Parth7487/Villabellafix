@@ -140,7 +140,7 @@ export default function BundleSection() {
                         bundle.isPopular ? "text-stone-400" : "text-stone-500"
                       }`}
                     >
-                      Fra
+                      {t("bundle.from")}
                     </p>
                     <div className="flex items-baseline gap-1">
                       <span className="text-3xl md:text-4xl font-light">
