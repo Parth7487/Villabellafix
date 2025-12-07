@@ -165,7 +165,7 @@ export default function BundleSection() {
                           : "bg-emerald-50 text-emerald-700 border border-emerald-200"
                       }`}
                     >
-                      <span className="block text-xs">Spar</span>
+                      <span className="block text-xs">{t("bundle.save")}</span>
                       <span className="block font-light">
                         {bundle.savings} kr
                       </span>
