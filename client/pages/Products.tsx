@@ -54,7 +54,7 @@ export default function Products() {
           </div>
 
           {/* Products Grid */}
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-10 mb-20">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-10 mb-8">
             {products.map((product) => (
               <Link
                 key={product.id}
