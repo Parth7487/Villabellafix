@@ -17,18 +17,18 @@ export default function BundleSection() {
   const bundleOptions: BundleOption[] = [
     {
       id: "cover-only",
-      label: "ESSENTIALS",
-      title: "Putekasse",
-      description: "Eksklusiv putekasse i håndlagd stoff",
+      label: t("bundle.essentials"),
+      title: t("bundle.essentialsTitle"),
+      description: t("bundle.essentialsDesc"),
       price: 599,
       image:
         "https://cdn.builder.io/api/v1/image/assets%2Fe39acd0515c343298f9577041fa60f29%2Fa823fb3706024cb6a456b310a63c139a?format=webp&width=600",
     },
     {
       id: "with-pillow",
-      label: "MOST POPULAR",
-      title: "Komplett sett",
-      description: "Putekasse + innerpute",
+      label: t("bundle.mostPopular"),
+      title: t("bundle.completeSet"),
+      description: t("bundle.completeSetDesc"),
       price: 1099,
       savings: 100,
       isPopular: true,
@@ -37,9 +37,9 @@ export default function BundleSection() {
     },
     {
       id: "buy-3",
-      label: "ULTIMATE VALUE",
-      title: "Tre sett",
-      description: "Maksimal sparing og stil",
+      label: t("bundle.ultimateValue"),
+      title: t("bundle.threeSets"),
+      description: t("bundle.threeSetsDesc"),
       price: 3499,
       savings: 899,
       image:
